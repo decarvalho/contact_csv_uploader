@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version: ruby 2.6.6p146
+Rails version: Rails 6.1.4.1
 
-Things you may want to cover:
+Create user: rails db:seed
 
-* Ruby version
+CSV Files for testing:
+1 - contact_csv_uploader/first_csv_sample.csv - There are no issues
+2 - contact_csv_uploader/second_csv_sample.csv - There are no issues
+3 - contact_csv_uploader/third_csv_sample.csv - Missing first contact's name
+4 - contact_csv_uploader/forth_csv_sample.csv - Missing all contact's name
 
-* System dependencies
+URLs:
+/csv_files - List of files importes
+/contacts - List of imported contacts
+/contacts/new - Where user can import new contacts
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Missing field requirement validations, spec tests and asynchronous processing.
