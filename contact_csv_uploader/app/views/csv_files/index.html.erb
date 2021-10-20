@@ -1,0 +1,13 @@
+<h1>Imported Contacts Files</h1>
+
+<%= paginate @csv_files %>
+
+<ul>
+  <% @csv_files.each do |csv_file| %>
+    <li>
+      Id: <%= csv_file.id %>
+      Log: <%= csv_file.log %>
+      Status: <%= csv_file.status %>
+    </li>
+  <% end %>
+</u

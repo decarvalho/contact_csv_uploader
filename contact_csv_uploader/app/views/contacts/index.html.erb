@@ -1,0 +1,20 @@
+<h1>Contacts</h1>
+
+<%= paginate @contacts %>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <li>
+      <%= contact.name %>
+      <%= contact.birthday %>
+      <%= contact.phone %>
+      <%= contact.address %>
+      <%= contact.franchise %>
+      <%= contact.email %>
+      <%= contact.card_number %>
+      <%= link_to "Uploaded File", contact.csv_file %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Upload CSV", new_contact_path %>

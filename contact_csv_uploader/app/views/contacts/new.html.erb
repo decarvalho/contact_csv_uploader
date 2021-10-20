@@ -1,0 +1,7 @@
+<br/>
+<b>Upload CSV to import Contacts</b>
+
+<%= form_tag import_contacts_path, multipart: true do %>
+  <%= file_field_tag :file%>
+  <%= submit_tag "Upload CSV" %>
+<% end %>
